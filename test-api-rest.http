@@ -1,0 +1,39 @@
+@url=http://127.0.0.1:8000/post
+
+### POST NEW USING CURL
+curl -X POST \
+  '{{url}}' \
+  --header 'Accept: */*' \
+  --header 'Content-Type: application/json' \
+  --data-raw '{
+  "description": "Extension Thunder Client",
+  "title": "titulo {{$randomInt 1 100}}"
+}'
+"""
+
+### POST DATA ENCODED
+POST {{url}} HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+description=Extension Rest Client {{$timestamp}}&title=Post {{$guid}}
+
+### UPDATE DATA
+PUT {{url}}/6 HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+description=Extension Rest Client Updated&title=Post 6 {{$randomInt 500 600}}
+
+
+### DELETE DATA
+DELETE {{url}}/3 HTTP/1.1
+
+"""
+
+### LIST ALL DATA
+
+GET {{url}} HTTP/1.1 
+
+"""
+
+### tips
+### https://marketplace.visualstudio.com/items?itemName=humao.rest-client

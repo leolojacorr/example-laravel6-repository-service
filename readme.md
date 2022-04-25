@@ -2,6 +2,18 @@
 
 Laravel app using service-repository pattern. You may use Postman to try the CRUD functionality. This is just for Backend only.
 
+### Instalação
+
+- Copiar o .env.example para .env (`cp .env.example .env`)
+- Criar o APP_KEY no env (`php artisan key:generate`)
+- `composer install`
+- `composer update`
+- `composer migrate`
+- Testar:
+ - Com a extensão REST Client, no VSCode, testar `test-api-rest.http`
+ - Usando o Postman
+
+
 You can check the tutorial at https://dev.to/safventure/implement-crud-with-laravel-service-repository-pattern-1dkl
 
 Create - POST - http://{localhost}/post/?title={newTitle}&description={newDescription} <br />
