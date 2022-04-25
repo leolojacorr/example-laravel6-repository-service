@@ -9,9 +9,9 @@ Laravel app using service-repository pattern. You may use Postman to try the CRU
 - `composer install`
 - `composer update`
 - `composer migrate`
-- Testar:
- - Com a extensão REST Client, no VSCode, testar `test-api-rest.http`
- - Usando o Postman
+- Rodar: `php artisan serve`
+- Testar com a extensão REST Client, no VSCode `test-api-rest.http`
+- ou Testar usando o Postman
 
 
 You can check the tutorial at https://dev.to/safventure/implement-crud-with-laravel-service-repository-pattern-1dkl
